@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- title -->
+    <title>Favourite Movies</title>
+    <!-- syle sheet link -->
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- bootstrap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- body -->
+  <body>
+    <nav class="navbar navbar-light bg-black">
+      <div class="container-fluid">
+        <!-- home page link -->
+        <a 
+        class="navbar-brand" href="/index.html"
+        style="background-color: rgb(128, 128, 157); color: rgb(232, 178, 78); border-radius: 5px; padding: 5px;">IMDB/Home</a>
+        <!-- disable form input -->
+        <form class="d-flex">
+          <input
+            id="searchBar"
+            type="text"
+            class="form-control me-2"
+            placeholder="Enter Movie Title here.."
+            aria-label="Enter Movie Title here.."
+            aria-describedby="basic-addon1"
+            name="searchInputTitle"
+            disabled
+          />
+        </form>
+        <!-- disable favourite movies page link -->
+        
+        <a
+          class="btn btn-danger "
+          href="./Movies.html"
+          id="fav_movie_btn"
+          >Favourite Movies</a
+        >
+      </div>
+    </nav>
+    <!-- main section -->
+    <div class="display_fav_container">
+      <h1 class="display-15">My Favourite Movies List</h1>
+      <!-- display favourite movies container -->
+      <ul id="listFav"></ul>
+    </div>
+    <!-- movies.html page script file -->
+    <script src="../js/favScript.js"></script>
+  </body>
+</html>

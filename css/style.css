@@ -1,0 +1,54 @@
+/* nav bar  */
+#searchBar {
+  width: 50vw;
+}
+.navbar{
+  background-color: grey;
+}
+
+a.disabled {
+  pointer-events: none;
+  cursor: default;
+}
+
+/* favourite movies container */
+#header_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.display_fav_container {
+  display: flex;
+  justify-content: center;
+  margin-top: 0.5rem;
+  flex-direction: column;
+  align-items: center;
+}
+
+#listFav {
+  margin-top: 1rem;
+}
+
+#info_btn {
+  border: none;
+  padding: none;
+  background: none;
+  margin: 0;
+}
+
+#info {
+  cursor: pointer;
+}
+
+#movie_info_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+}
+
+.moviecontainer1{
+  display: flex;
+  flex-wrap: wrap;
+}

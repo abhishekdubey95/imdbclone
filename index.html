@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" />
+    <title> IMDB Demo</title>
+    <!-- bootstap cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+      crossorigin="anonymous"
+    />
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <!-- body -->
+  <body>
+    <nav class="navbar navbar-light bg-black">
+      <div class="container-fluid">
+        <!-- link for the home page -->
+        <a 
+        class="navbar-brand" href="/index.html"
+        style="background-color: rgb(51, 51, 58); color: rgb(237, 233, 225); border-radius: 10px; padding: 10px;">IMDB Lab </a>
+        <!-- form to get search input -->
+        <form class="d-flex">
+          <input
+            id="searchBar"
+            type="text"
+            class="form-control me-2"
+            placeholder="Enter Movie title here.."
+            aria-label="Enter Movie title here.."
+            aria-describedby="basic-addon1"
+            name="searchInputTitle"
+          />
+        </form>
+        <!-- link for favourite movies page -->
+        <a class="btn btn-danger" href=".//html/Movies.html"
+          >Favourite Movies</a
+        >
+      </div>
+    </nav>
+
+    <!-- <div class="moviecontainer1"> 
+  
+      <-- Row 1-->
+     <!-- <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/Shang_chii.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/ironman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/avengersendgame_lob_crd_05.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/allahdin.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div> -->
+
+<!-- <-- Row 2--> 
+    <!-- <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/Shang_chii.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/ironman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/avengersendgame_lob_crd_05.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/allahdin.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <-- Row 3 -->
+
+    <!-- <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/Shang_chii.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/ironman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/avengersendgame_lob_crd_05.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/allahdin.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+
+    <-- Row 4 -->
+
+    <!-- <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/Shang_chii.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/ironman.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div> 
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/avengersendgame_lob_crd_05.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>
+
+    <div class="card" style="width: 18rem; margin : 2rem;">
+      <img src="./img/allahdin.jpg" class="card-img-top" alt="...">
+      <div class="card-body">
+        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      </div>
+    </div>  -->
+  
+
+  </div>
+    <!-- display search drop down container -->
+    <div
+      class="card text-dark bg-light mb-3"
+      style="max-width: 50rem; margin-left: 24.2rem; flex-direction: row"
+      id="searchRes"
+    ></div>
+    <!-- index.js script file -->
+    <script src="./js/script.js" type="text/javaScript"></script>
+  </body>
+</html>
